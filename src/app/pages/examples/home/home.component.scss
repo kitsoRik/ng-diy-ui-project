@@ -1,0 +1,31 @@
+:host {
+    flex: 1;
+
+    background-color: black;
+}
+
+header {
+    padding: 10px;
+    height: 60px;
+
+    display: grid;
+    grid-template-columns: 140px auto 1fr 1fr 1fr 1fr 1fr;
+
+    .field {
+        height: 100%;
+
+        display: flex;
+    }
+
+
+    background-color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+
+    flex: 1;
+
+
+}
