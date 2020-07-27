@@ -13,6 +13,7 @@ import { NgDiyUiIconComponent } from "../../ng-diy-ui-icon/ng-diy-ui-icon.compon
 	styleUrls: ["./ng-diy-ui-combobox-option.component.scss"],
 })
 export class NgDiyUiComboboxOptionComponent {
+	@Input("text") text;
 	@Input("value") value;
 
 	@HostListener("click") onClick = () => {};

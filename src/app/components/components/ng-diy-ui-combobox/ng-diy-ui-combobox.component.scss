@@ -1,49 +1,49 @@
-@import "../../styles/effects.scss";
+// @import "../../styles/effects.scss";
 
-%option-template {
-    @extend %button-template;
+// %option-template {
+// 	@extend %button-template;
 
-    &:not(:first-child) {
-        border-top: none;
-    }
-}
+// 	&:not(:first-child) {
+// 		border-top: none;
+// 	}
+// }
 
 :host {
-    width: 170px;
-    display: inline-flex;
-
+	width: 170px;
+	display: inline-flex;
 }
 
 .kit-combobox {
-    position: relative;
+	position: relative;
 
-    flex: 1;
-    display: flex;
+	flex: 1;
+	display: flex;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    &-value {
-        @extend %option-template;
+	&-value {
+		// @extend %option-template;
 
-        flex: 1;
-    }
+		flex: 1;
+	}
 
-    &-options,
-    &-groups {
-        width: 100%;
-        position: absolute;
+	&-options,
+	&-groups {
+		width: 100%;
+		position: absolute;
 
-        max-height: 200px;
-        overflow: auto;
+		max-height: 200px;
+		overflow: auto;
 
-        z-index: 1500;
-    }
+		z-index: 1500;
+	}
 
-    &-options {}
+	&-options {
+	}
 
-    &-groups {
-        display: grid;
-        grid-template-rows: auto-fill;
-        grid-row-gap: 5px;
-    }
+	&-groups {
+		display: grid;
+		grid-template-rows: auto-fill;
+		grid-row-gap: 5px;
+	}
 }

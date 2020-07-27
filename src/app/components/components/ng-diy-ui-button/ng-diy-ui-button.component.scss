@@ -1,17 +1,15 @@
-@import "./styles/effects.scss";
-
 :host {
-    display: inline-flex;
+	display: inline-flex;
 }
 
 .button {
-    @extend %button-template;
-    flex: 1;
+	flex: 1;
 
+	box-sizing: border-box;
+}
 
-    box-sizing: border-box;
-
-    &:disabled {
-        cursor: not-allowed;
-    }
+@mixin set-theme__button() {
+	.button {
+		@content;
+	}
 }

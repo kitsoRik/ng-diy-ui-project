@@ -1,33 +1,37 @@
-@import "./colors.scss";
+@import "../ng-diy-ui-button.component.scss";
 
 %button-template {
-    padding: 6px 16px;
+	padding: 6px 16px;
 
-    color: $holdTextColor;
-    background-color: $holdBackgroundColor;
-    border: 2px solid $holdBorderColor;
+	color: $holdTextColor;
+	background-color: $holdBackgroundColor;
+	border: 2px solid $holdBorderColor;
 
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    &:hover {
-        color: $hoverTextColor;
-        background-color: $hoverBackgroundColor;
-        border-color: $hoverBorderColor;
-    }
+	&:hover {
+		color: $hoverTextColor;
+		background-color: $hoverBackgroundColor;
+		border-color: $hoverBorderColor;
+	}
 
-    &:active {
-        color: $activeTextColor;
-        background-color: $activeBackgroundColor;
-        border-color: $activeBorderColor;
-    }
+	&:active {
+		color: $activeTextColor;
+		background-color: $activeBackgroundColor;
+		border-color: $activeBorderColor;
+	}
 
-    &:disabled {
-        color: $disabledTextColor;
-        background-color: $disabledBackgroundColor;
-        border-color: $disabledBorderColor;
-    }
+	&:disabled {
+		color: $disabledTextColor;
+		background-color: $disabledBackgroundColor;
+		border-color: $disabledBorderColor;
+	}
+}
+
+@include set-theme__button {
+	@extend %button-template;
 }

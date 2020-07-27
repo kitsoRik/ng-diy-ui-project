@@ -1,4 +1,4 @@
-@import "../../../styles/colors.scss";
+@import "../../../../styles/themes/default/colors.scss";
 
 $holdTextColor: $primary-100;
 $holdBackgroundColor: $secondary2-100;
@@ -15,3 +15,5 @@ $activeBorderColor: $secondary-300;
 $disabledTextColor: $primary-400;
 $disabledBackgroundColor: $secondary2-400;
 $disabledBorderColor: $secondary-400;
+
+@import "../effects.scss";

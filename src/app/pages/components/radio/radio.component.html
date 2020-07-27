@@ -1,0 +1,121 @@
+<ng-diy-ui-group-box>
+	<ng-diy-ui-label text="Group">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Group reverse">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Group odd">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Group even">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Group odd reverse">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Group even reverse">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group [(value)]="value">
+				<ng-diy-ui-radio [value]="'value5'">Value5</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value3'">Value3</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value1'">Value1</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value6'">Value6</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value4'">Value4</ng-diy-ui-radio>
+				<ng-diy-ui-radio [value]="'value2'">Value2</ng-diy-ui-radio>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+</ng-diy-ui-group-box>
+
+<ng-diy-ui-group-box>
+	<ng-diy-ui-label text="Each">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio-group>
+				<ng-diy-ui-radio
+					[checked]="customGroup1[0]"
+					(checkedChange)="
+						customGroup1[0] = $event; customGroup1[1] = !$event
+					"
+					>123</ng-diy-ui-radio
+				>
+				<ng-diy-ui-radio
+					[checked]="customGroup1[1]"
+					(checkedChange)="
+						customGroup1[0] = !$event; customGroup1[1] = $event
+					"
+					>123</ng-diy-ui-radio
+				>
+			</ng-diy-ui-radio-group>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+
+	<ng-diy-ui-label text="Each">
+		<ng-diy-ui-group-box>
+			<ng-diy-ui-radio
+				[checked]="customGroup1[0]"
+				(checkedChange)="
+					customGroup1[0] = $event; customGroup1[1] = !$event
+				"
+				>123</ng-diy-ui-radio
+			>
+			<ng-diy-ui-radio
+				[checked]="customGroup1[1]"
+				(checkedChange)="
+					customGroup1[0] = !$event; customGroup1[1] = $event
+				"
+				>123</ng-diy-ui-radio
+			>
+		</ng-diy-ui-group-box>
+	</ng-diy-ui-label>
+</ng-diy-ui-group-box>

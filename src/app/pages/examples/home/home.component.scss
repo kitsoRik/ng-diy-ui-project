@@ -9,10 +9,9 @@ header {
     height: 60px;
 
     display: grid;
-    grid-template-columns: 140px auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 140px auto;
 
     .field {
-        height: 100%;
 
         display: flex;
     }

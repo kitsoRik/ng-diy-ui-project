@@ -8,9 +8,10 @@ import { ComponentsModule } from "./components/components.module";
 import { ButtonComponent } from "./pages/components/button/button.component";
 import { FormsModule } from "@angular/forms";
 import { HomeComponent } from "./pages/examples/home/home.component";
+import { RadioComponent } from './pages/components/radio/radio.component';
 
 @NgModule({
-	declarations: [AppComponent, ButtonComponent, HomeComponent],
+	declarations: [AppComponent, ButtonComponent, HomeComponent, RadioComponent],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,

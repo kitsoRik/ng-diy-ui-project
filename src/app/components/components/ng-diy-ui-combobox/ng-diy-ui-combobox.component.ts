@@ -72,7 +72,6 @@ export class NgDiyUiComboboxComponent
 		if (value === this._value) return;
 
 		this._value = value;
-		this.onChange(value);
 	}
 
 	get optionValue(): NgDiyUiComboboxOptionComponent {
@@ -87,11 +86,7 @@ export class NgDiyUiComboboxComponent
 
 	opened: Boolean = false;
 
-	constructor(private ref: ChangeDetectorRef) {
-		setTimeout(() => {
-			ref.markForCheck();
-		}, 1000);
-	}
+	constructor() {}
 
 	onChange = (_) => {};
 
@@ -119,7 +114,8 @@ export class NgDiyUiComboboxComponent
 	}
 
 	selectOption(option: NgDiyUiComboboxOptionComponent) {
-		this.value = option.value;
 		this.opened = false;
+		this.onChange(option.value);
+		this._value = option.value;
 	}
 }

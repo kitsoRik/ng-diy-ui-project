@@ -1,10 +1,11 @@
+@import "../../../styles/colors.scss";
 $primary-100: #028e9b;
 $primary-200: #35c0cd;
 $primary-300: #5ec4cd;
 $primary-400: #1e6d74;
 $primary-500: #015c65;
 
-$secondary-100: #4a2ab6;
+$secondary-100: red;
 $secondary-200: #5b4cd8;
 $secondary-300: #7c71d8;
 $secondary-400: #382f85;
@@ -22,5 +23,4 @@ $additional-300: #ffb573;
 $additional-400: #bf7330;
 $additional-500: #a64e00;
 
-@mixin set-colors {
-}
+@include set-colors();

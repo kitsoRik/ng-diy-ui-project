@@ -7,6 +7,9 @@ import { NgDiyUiTextModule } from "./components/ng-diy-ui-text/ng-diy-ui-text.mo
 import { NgDiyUiLabelModule } from "./components/ng-diy-ui-label/ng-diy-ui-label.module";
 import { NgDiyUiTextFieldModule } from "./components/ng-diy-ui-text-field/ng-diy-ui-text-field.module";
 import { NgDiyUiComboboxModule } from "./components/ng-diy-ui-combobox/ng-diy-ui-combobox.module";
+import { NgDiyUiNavModule } from "./components/ng-diy-ui-nav/ng-diy-ui-nav.module";
+import { NgDiyUiRadioModule } from "./components/ng-diy-ui-radio/ng-diy-ui.radio.module";
+import { NgDiyUiGroupBoxModule } from "./components/ng-diy-ui-group-box/ng-diy-ui-group-box.module";
 
 @NgModule({
 	declarations: [],
@@ -19,6 +22,9 @@ import { NgDiyUiComboboxModule } from "./components/ng-diy-ui-combobox/ng-diy-ui
 		NgDiyUiLabelModule,
 		NgDiyUiTextFieldModule,
 		NgDiyUiComboboxModule,
+		NgDiyUiNavModule,
+		NgDiyUiRadioModule,
+		NgDiyUiGroupBoxModule,
 	],
 	exports: [
 		NgDiyUiButtonModule,
@@ -28,6 +34,9 @@ import { NgDiyUiComboboxModule } from "./components/ng-diy-ui-combobox/ng-diy-ui
 		NgDiyUiLabelModule,
 		NgDiyUiTextFieldModule,
 		NgDiyUiComboboxModule,
+		NgDiyUiNavModule,
+		NgDiyUiRadioModule,
+		NgDiyUiGroupBoxModule,
 	],
 	providers: [],
 })

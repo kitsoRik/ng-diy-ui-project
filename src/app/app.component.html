@@ -5,10 +5,17 @@
 		Settings
 	</ng-diy-ui-fixed-side-panel-header>
 	<ng-diy-ui-fixed-side-panel-content>
-		<ng-diy-ui-toggle [(ngModel)]="darkChecked">
-			<ng-diy-ui-toggle-value style="color: white;"
-				>Black</ng-diy-ui-toggle-value
+		<ng-diy-ui-toggle [(ngModel)]="darkChecked"> </ng-diy-ui-toggle>
+		<ng-diy-ui-toggle-value style="color: white;"
+			>Black</ng-diy-ui-toggle-value
+		>
+		<ng-diy-ui-combobox [(ngModel)]="theme">
+			<ng-diy-ui-combobox-option value="default" text="Default"
+				>Default</ng-diy-ui-combobox-option
 			>
-		</ng-diy-ui-toggle>
+			<ng-diy-ui-combobox-option value="dark" text="Dark"
+				>Dark</ng-diy-ui-combobox-option
+			>
+		</ng-diy-ui-combobox>
 	</ng-diy-ui-fixed-side-panel-content>
 </ng-diy-ui-fixed-side-panel>
